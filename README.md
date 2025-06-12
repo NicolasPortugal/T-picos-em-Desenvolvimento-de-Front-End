@@ -61,20 +61,6 @@ Siga os passos abaixo para clonar, instalar e rodar a aplicação em seu ambient
    git clone <URL_DO_REPOSITORIO>
    cd meu-app
 
-
+   código pra instalação/rodar programa:
    npm install
    npm run dev
-meu-app/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── TaskList.jsx        // Componente para exibir a lista de tarefas
-│   │   └── AddTask.jsx         // Componente para adicionar uma tarefa
-│   ├── pages/
-│   │   ├── Home.jsx            // Página inicial (Lista de Tarefas)
-│   │   └── Add.jsx             // Página para adicionar uma nova tarefa
-│   ├── App.jsx                 // Configuração das rotas e navegação
-│   ├── main.jsx                // Ponto de entrada da aplicação
-│   └── index.css               // Arquivo de estilização global
-├── package.json                // Dependências e scripts do projeto
-└── vite.config.js              // Configuração do Vite
