@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+input, textarea {
+  width: 300px;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
