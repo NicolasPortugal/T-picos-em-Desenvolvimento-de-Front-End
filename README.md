@@ -1,12 +1,80 @@
-# React + Vite
+# Lista de Tarefas com React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação simples de gerenciamento de tarefas desenvolvida utilizando **React** com **Vite** e **react-router-dom**. A aplicação possui duas páginas principais: uma para exibir a lista de tarefas e outra para adicionar novas tarefas. As tarefas são salvas no `localStorage` do navegador.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição do Projeto
 
-## Expanding the ESLint configuration
+A aplicação simula uma interface de **To-Do List** onde o usuário pode:
+- **Visualizar** as tarefas salvas.
+- **Adicionar** novas tarefas por meio de um formulário.
+- **Marcar** tarefas como concluídas ou desmarcá-las.
+- **Excluir** tarefas da lista.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cada tarefa contém:
+- Um **ID único** para identificação.
+- Um **título**.
+- Uma **descrição**.
+- Um status de **conclusão** (true/false).
+
+---
+
+## Funcionalidades
+
+- **Página Inicial** (`/`):
+  - Exibe a lista de tarefas salvas.
+  - Permite marcar tarefas como concluídas ou desmarcá-las.
+  - Permite excluir tarefas da lista.
+  - Oferece um link para a página de adição de tarefas.
+
+- **Página de Adicionar Tarefa** (`/add`):
+  - Formulário para inserir o título e a descrição da nova tarefa.
+  - Ao salvar, a nova tarefa é adicionada ao `localStorage` e o usuário é redirecionado para a página inicial.
+
+---
+
+## Tecnologias Utilizadas
+
+- **React** – Biblioteca JavaScript para construção de interfaces.
+- **Vite** – Ferramenta de bundling e desenvolvimento rápido para projetos React.
+- **React Router DOM** – Biblioteca para navegação entre as páginas.
+- **LocalStorage** – API do navegador para armazenamento persistente de dados.
+
+---
+
+## Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado em seu ambiente:
+- **Node.js** (versão 12 ou superior)
+- **npm** (gerenciador de pacotes do Node.js)
+
+---
+
+## Instalação e Configuração
+
+Siga os passos abaixo para clonar, instalar e rodar a aplicação em seu ambiente local:
+
+1. **Clone o repositório (ou crie a estrutura de pastas):**
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd meu-app
+
+
+   npm install
+   npm run dev
+meu-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── TaskList.jsx        // Componente para exibir a lista de tarefas
+│   │   └── AddTask.jsx         // Componente para adicionar uma tarefa
+│   ├── pages/
+│   │   ├── Home.jsx            // Página inicial (Lista de Tarefas)
+│   │   └── Add.jsx             // Página para adicionar uma nova tarefa
+│   ├── App.jsx                 // Configuração das rotas e navegação
+│   ├── main.jsx                // Ponto de entrada da aplicação
+│   └── index.css               // Arquivo de estilização global
+├── package.json                // Dependências e scripts do projeto
+└── vite.config.js              // Configuração do Vite
